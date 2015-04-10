@@ -20,7 +20,7 @@
     'key_hash': 'md5=58fa8ae27c89f37b08429f04fd4a88cc',
     'rpm': 'http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm',
   } %}
-{% elif grains['os'] == 'Amazon' and grains['osmajorrelease'] == '2014' %}
+{% elif grains['os'] == 'Amazon' and grains['osmajorrelease'] == '*' %}
   {% set pkg = {
     'key': 'https://fedoraproject.org/static/0608B895.txt',
     'key_hash': 'md5=eb8749ea67992fd622176442c986b788',
